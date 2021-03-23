@@ -38,7 +38,7 @@
         <% if user_signed_in? %>
           <%= form_with model: [@prototype, @comment], local: true do |f|%>
             <div class="field">
-              <%= f.label :hoge, "コメント" %><br />
+              <%= f.label :text, "コメント" %><br />
               <%= f.text_field :text %>
             </div>
             <div class="actions">
